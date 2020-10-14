@@ -7,36 +7,44 @@ In the repository you can find both Matlab version as well as a code-generated C
 
 
 // includes for MATLAB-generated code
-#include "update_parameters_FIB.h"
+
+        #include "update_parameters_FIB.h"
 
 ////////////////////////////////////////////////////////////////////////
 
 // number of steps to collect performance index J (incremented)
-double N_c = 50;
-// number of steps to complete a single iteration
-double N_max = 60;
-// initial value of the second parameter during the half of the first bootstrap
-double Par_initial = 1;
-// method for gaintuner (see manual)
-double method = 2;
-// comments for gaintuner (see manual)
-double comments = 0;
 
-double output_FIB[4];
+        double N_c = 50;
+        
+// number of steps to complete a single iteration
+
+        double N_max = 60;
+        
+// initial value of the second parameter during the half of the first bootstrap
+
+        double Par_initial = 1;
+        
+// method for gaintuner (see manual)
+        
+        double method = 2;
+        
+// comments for gaintuner (see manual)
+
+        double comments = 0;
+        double output_FIB[4];
 
 // double P1_range[2];
 // double P2_range[2];
 
-double gain1;
-double gain2;
+        double gain1;
+        double gain2;
 
-double control_error;
-double main_iteration_counter = 0;
-
-
+        double control_error;
+        double main_iteration_counter = 0;
 
 // put the following in the tuning loop
-update_parameters_FIB(control_error, main_iteration_counter, P1_range, P2_range, N_c, N_max, Par_initial, method, comments, output_FIB);
+
+        update_parameters_FIB(control_error, main_iteration_counter, P1_range, P2_range, N_c, N_max, Par_initial, method, comments, output_FIB);
 
         gain1 = output_FIB[0];
         gain2 = output_FIB[1];
