@@ -5,9 +5,9 @@ author={D. {Horla} and M. {Hamandi} and W. {Giernacki} and A. {Franchi}},
 journal={IEEE Robotics and Automation Letters},   
 title={Optimal Tuning of the Lateral-Dynamics Parameters for Aerial Vehicles with Bounded Lateral Force},   
 year={2021},  
-volume={},  
-number={},  
-pages={1-1},  
+volume={6,  
+number={2},  
+pages={3949-3955},  
 doi={10.1109/LRA.2021.3067229}}
 
 ***
